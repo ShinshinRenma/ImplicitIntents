@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/website_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_uri"
+        android:inputType="text"
+        android:textColorHint="#757575"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/button_uri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/button_uri"
+        android:onClick="openWebsite" />
+
+    <EditText
+        android:id="@+id/edittext_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_loc"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:id="@+id/button_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/button_loc"
+        android:onClick="openLocation" />
+
+    <EditText
+
+        android:id="@+id/edittext_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/edittext_share"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/button_share"
+        android:onClick="shareText" />
+
+</LinearLayout>
